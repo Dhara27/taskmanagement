@@ -8,21 +8,40 @@ import org.springframework.stereotype.Service;
 import com.example.taskmanagement.model.Task;
 import com.example.taskmanagement.repository.TaskRepository;
 
+/**
+ * @author Dhara27 This is Service class for Task Management
+ */
 @Service
 public class TaskService {
 
 	@Autowired
-    private TaskRepository taskRepository;
+	private TaskRepository taskRepository;
 
-    public List<Task> findAll() {
-        return taskRepository.findAll();
-    }
+	/**
+	 * Returns All Tasks
+	 * 
+	 * @return List of Tasks
+	 */
+	public List<Task> findAll() {
+		return taskRepository.findAll();
+	}
 
-    public Task save(Task task) {
-        return taskRepository.save(task);
-    }
+	/**
+	 * Save a task
+	 * 
+	 * @param task input
+	 * @return Task
+	 */
+	public Task save(Task task) {
+		return taskRepository.save(task);
+	}
 
-    public void deleteById(Long id) {
-        taskRepository.deleteById(id);
-    }
+	/**
+	 * Delete a task
+	 * 
+	 * @param id input
+	 */
+	public void deleteById(Long id) {
+		taskRepository.deleteById(id);
+	}
 }
