@@ -1,0 +1,53 @@
+HELP.md
+
+.mvn/wrapper/maven-wrapper.jar
+**/src/main/**/target/
+**/src/test/**/target/
+.mvn/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### VS Code ###
+.vscode/
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Maven specific files
+target/
+mvnw
+mvnw.cmd
+
+# Spring Boot specific
+*.war
+*.jar
+
+# Eclipse specific
+.project
+.classpath
+.settings/
+target/
+
+# Windows OS-specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.tmp
+*.bak
+*.old
+
+# Other
+node_modules/
+lib/
